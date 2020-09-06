@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./weather.css">
+    <link rel="stylesheet" href="./fontawesome-free-5.12.0-web/css/all.min.css">
+    <title>Weather API</title>
+</head>
+
+<body>
+    <div class="container-full">
+
+        <div class="search text-center">
+            <h2>Current Weather</h2>
+            <form id="search">
+                <input type="search" id="cityVal" placeholder="Enter location...">
+            </form>
+        </div>
+
+
+        <div class="card hidden">
+            <div class="circle text-center">
+                <div class="img"></div>
+                <div class="temp">
+                    <h3 id="temp"></h3>
+                </div>
+            </div>
+
+            <div class="data">
+                <ul>
+                    <li id="humidity"></li>
+                    <li id="pre"></li>
+                    <li id="cloud"></li>
+                </ul>
+            </div>
+
+            <div class="location">
+                <i class="fas fa-map-pin"><span>
+                        <p id="location"></p>
+                    </span>
+                </i>
+                <i class="fas fa-calendar-alt"><span>
+                        <p id="date"></p>
+                    </span>
+                </i>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="weather.js"></script>
+</body>
+
+</html>

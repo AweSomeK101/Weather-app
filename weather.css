@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: Montserrat;
+    src: url("./Montserrat-Regular.woff")
+}
+@font-face{
+    font-family: MontserratSemiBold;
+    src: url("./Montserrat-SemiBold.ttf")
+}
+
+body{
+    font-family: MontserratSemiBold;
+    /* font-weight: bolder; */
+    font-size: 16px;
+    color: #333;
+    background: #d754e6;
+    line-height: 1.3;
+    height: 100vh;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
+
+.container-full{
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+.search{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 300px;
+    padding: 40px 30px;
+    border-radius: 50px;
+    box-shadow:   25px 25px 50px #b948c6, 
+    -25px -25px 50px #f560ff;
+}
+
+.search h2{
+    padding-bottom: 1rem;
+    letter-spacing: 7px;
+    font-size: 2.5rem;
+    text-shadow:-5px -7px 12px  rgba(255,255,255,0.45), 
+    5px 7px 11px rgba(0,0,0,0.45);
+}
+
+.search form{
+    margin-top: 1rem;
+}
+
+.search form input{
+    width: 70%;
+    font-size: 1rem;
+    padding: 15px 20px;
+    border-style: none;
+    border-radius: 50px;
+    background: #d754e6;
+    box-shadow:  20px 20px 60px #9f3eaa, 
+            -20px -20px 60px #ff6aff;
+    transition: box-shadow 1s ease;
+}
+
+.search form input:focus{
+    border-radius: 50px;
+    background: #d754e6;
+    box-shadow: inset 20px 20px 60px #b747c4, 
+            inset -20px -20px 60px #f761ff;
+}
+
+
+.card{
+    font-family: Montserrat;
+    min-width: 300px;
+    min-height: 500px;
+    border-radius: 50px;
+    background: #d754e6;
+    box-shadow:  25px 25px 50px #b948c6, 
+    -25px -25px 50px #f560ff;
+    position: relative;
+}
+
+.card .circle{
+    margin: 1rem auto;
+    width: 70%;
+    border-radius: 50%;
+    background: #d754e6;
+    box-shadow: inset 24px 24px 47px #b948c6, 
+            inset -24px -24px 47px #f560ff;
+    display: grid;
+    place-content: center;
+}
+
+.card .circle .img{
+    margin: 2rem 0 1rem 0;
+    height: 100px;
+    width: 100px;
+    border-radius: 150px;
+    background: #d754e6;
+    /* background: #fff; */
+    box-shadow:  9px 9px 18px #b948c6, 
+            -9px -9px 18px #f560ff;
+    background-size: contain;
+    background-position: center;
+    outline: none;
+    /* image-rendering: auto; */
+    /* background-color: #ccc; */
+}
+
+.card .circle .temp{
+    margin-bottom: 1rem;
+}
+
+.data{
+    position: absolute;
+    top: 56%;
+    left: 10%;
+}
+
+.data ul{
+    list-style: none;
+}
+
+.data ul li{
+    margin: 5px 0;
+}
+
+
+.location{
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+}
+
+.location i{
+    display: block;
+    padding: 7px 0;
+}
+
+.location p{
+    display: inline;
+    padding-left: 5px;
+}
